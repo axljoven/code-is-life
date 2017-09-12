@@ -1,0 +1,570 @@
+* {
+  transition: all 0.2s;
+}
+
+/* Landing page */
+.landing {
+  background: url('../images/site/backgrounds/landing_7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Brand image */
+
+.landing .brand-image {
+  margin-bottom: 60px;
+}
+
+.landing .brand-image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 10px -1px #172935;
+}
+
+/* Text */
+.landing .text {
+  font-family: 'Calibri Light', sans-serif;
+  font-size: 25px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 100px;
+}
+
+.landing .text p {
+  text-shadow: 0px 1px 8px #172935;
+  margin-bottom: 0;
+}
+
+.landing .text p:nth-child(2) {
+  font-size: 43px;
+}
+
+.landing .text p > span {
+  font-family: 'Calibri', sans-serif;
+  font-size: 25px;
+  font-size: 43px;
+  font-weight: bolder;
+  color: #3498db;
+}
+
+/* Button */
+
+.landing a.btn {
+  font-family: 'Calibri', sans-serif;
+  font-size: 43px;
+  font-weight: bold;
+  text-shadow: 0px 2px 0px #aa1d14;
+
+  padding-top: 13px;
+  width: 463px;
+  height: 93px;
+
+  color: white;
+  background: #eb6251;
+  border: none;
+  box-shadow: 0px 4px 0px #b84c3e, 
+              0px 2px 20px #172935;
+}
+
+.landing a.btn:hover {  
+  color: #34495e;
+  background: #e74c3c;
+  box-shadow: 0px 4px 0px #c0392b,
+              0px 2px 20px #172935;
+}
+
+/* Main */
+
+.main {
+  border-top: solid 5px #eb6251;
+}
+
+/* Navigation */
+
+.nav {
+    padding: 20px 0;
+}
+
+.nav .container {
+    position: relative;
+}
+
+
+/* Navigation Brand --------------------------------------- */
+
+.nav .brand {
+    float: left;
+    font-weight: bold;
+}
+
+.nav .brand img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav .brand a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button burger nav -------------------------------------- */
+
+.nav button.btn {
+    position: absolute;
+    height: 70px;
+    top: 0px;
+    right: 15px;
+    
+    display: none;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+.icon-bar {
+    display: block;
+    background: #3498db;
+    
+    width: 25px;
+    height: 5px;    
+    
+    margin-bottom: 2px;
+
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.3);
+}
+
+.nav button.btn:hover .icon-bar {
+    background: rgba(52, 152, 219,0.5);
+}
+
+/* Menu --------------------------------------------------- */
+
+.nav .menu {
+/*    position: absolute;*/
+/*    top: 0px;*/
+/*    right: 0px;*/
+/*    bottom: 0px;*/
+    float: right;
+    display: block;
+	transition: none;
+}
+
+.nav .menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav .menu ul a {
+    display: inline-block;
+    list-style: none;
+    padding: 25px
+}
+
+
+
+/* Jobs */
+
+.job-list .jobs {
+  margin-bottom: 60px;
+}
+
+.job-list .jobs:last-child {
+  margin-bottom: 100px;
+}
+
+.jobs .date {
+  /*font-size: 14px;*/
+  margin-bottom: 20px;
+}
+
+.jobs a, .jobs a:hover {
+  text-decoration: none;
+}
+
+.jobs .job-title {
+  color: #404040;
+  font-weight: bold;
+}
+
+.jobs .info {
+  color: #e7e7e7;
+  font-size: 13px;
+}
+
+.jobs .info span{
+  color: #c0c0c0;
+}
+
+.jobs a .nodeJS {
+  background: url(../images/site/icons/nodeJS.png) no-repeat;
+}
+
+.jobs a .js {
+  background: url(../images/site/icons/js.png) no-repeat;
+}
+
+.jobs a .css {
+  background: url(../images/site/icons/css.png) no-repeat;
+}
+
+.jobs a .laravel {
+  background: url(../images/site/icons/laravel.png) no-repeat;
+}
+
+.jobs a .meteorJS {
+  background: url(../images/site/icons/meteorJS.png) no-repeat;
+}
+
+.jobs a .angularJS {
+  background: url(../images/site/icons/angularJS.png) no-repeat;
+}
+
+.jobs a .panel {
+  background-position: 12px;
+}
+
+.jobs a .panel-body {
+  margin-left: 60px;
+}
+
+/* Feedbacks */
+
+.feedbacks {
+  border-top: solid 5px #df405a;
+  border-bottom: solid 5px #4296b1;
+  background: url(../images/site/backgrounds/feedbacks.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding-bottom: 160px;
+  /*box-shadow: 0px 3px 10px rgba(0,0,0,1);*/
+}
+
+.feedbacks p.header {
+  font-family: "Calibri Light", sans-serif;
+  font-size: 30px;
+  color: #274555;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-top: 80px;
+  margin-bottom: 100px;
+
+  text-shadow: 0px 1px 1px rgba(39,69,85,0.8);
+}
+
+.feedbacks p.header span.brand {
+  font-weight: bold;
+  font-size: 48px;
+  color: #f26d5b;
+}
+
+.feedbacks p.header span.awesome {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.feedbacks ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 15%;
+}
+
+.feedbacks ul li {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.feedbacks ul li:last-child {
+  margin-bottom: 0;
+}
+
+.feedbacks ul li:nth-child(even) {
+  flex-direction: row-reverse
+}
+
+.feedbacks ul li:nth-child(even) .bubble {
+  margin-right: 25px;
+}
+.feedbacks ul li:nth-child(odd) .bubble {
+  margin-left: 25px;
+}
+
+.feedbacks ul li img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.8);
+}
+
+.feedbacks .bubble {
+  clear: both;
+  background: #fff;
+  padding: 22px 22px 5px 22px;
+  border-radius: 5px;
+  font-family: "Calibri", sans-serif;
+  max-width: 65%;
+  box-shadow: 0px 2px 5px rgba(0,0,0, 0.5);
+}
+
+.feedbacks .bubble:after {
+  content: '';
+  position: relative;
+  border-style: solid;
+  border-width: 6px 15px 6px 0;
+  /*border-width: 6px 0px 6px 15px;*/
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -36px;
+  top: -10px;
+}
+
+.feedbacks li:nth-child(even) .bubble:after {
+  border-width: 6px 0 6px 15px;
+  float: right;
+  left: 36px;
+  top: -10px;
+}
+
+.feedbacks .bubble p {
+  width: auto;
+  margin: 0;
+  color: #767777;
+  font-size: 17px;
+}
+
+.feedbacks .bubble .message {
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border-bottom: solid 1px #edc7cb;
+}
+
+.feedbacks .bubble .info {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+/* footer */
+
+.footer {
+  background: url(../images/site/backgrounds/footer.jpg) no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Calibri Light", sans-serif;
+  box-shadow:  inset 0 50px 100px rgba(0,0,0,0.5);
+  /*height: 100vh;*/
+}
+
+.footer .action {
+  margin-top: 250px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.footer .action .btn {
+  font-family: 'Calibri', sans-serif;
+    font-size: 43px;
+    font-weight: bold;
+    text-shadow: 0px 2px 0px #aa1d14;
+    padding-top: 13px;
+    width: 463px;
+    height: 93px;
+    color: white;
+    background: #eb6251;
+    border: none;
+    box-shadow: 0px 4px 0px #b84c3e, 
+ 0px 2px 20px #172935;
+}
+
+.footer .action .message {
+  font-size: 38px;
+  color: #fff;
+  text-shadow: 0px 2px 1px rgba(0,0,0,0.5);
+}
+
+.footer .action .message span{
+  font-weight: bold;
+  font-size: 48px;
+  color: #fdc23e;
+}
+
+.footer .action a{
+  margin-top: 30px;
+}
+
+.footer .brand-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer .brand-image img{
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 10px -1px #172935;
+}
+
+.footer .brand-image span{
+  color: #fff;
+  font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+@media (max-width: 1200px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 850px) { 
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .nav .menu {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Button --------------------------- */
+    
+    .nav button.btn {
+        display: inline-block;
+    }
+    
+    /* Menu ----------------------------- */
+    
+    .nav .menu {
+        float: none;
+        clear: both;
+        /*display: none;*/
+        margin-top: 80px;
+    }
+    
+    .nav .menu ul {
+        text-align: right;
+    }
+    
+    .nav .menu ul a {
+        display: block;
+        padding: 15px;
+        margin-bottom: 5px;
+        background: #3498db;
+        border-radius: 5px;
+        box-shadow: 0px 1px 1px rgba(0,0,0,.3);
+    }
+    
+    .nav .menu ul a:hover {
+        background: rgba(52, 73, 94,1.0);
+        text-decoration: none;
+    }
+    
+    .nav .menu ul li:last-child {
+        border-bottom: none;
+    }
+    
+    .nav .menu a {
+         color: #fff;
+    }
+    
+}
+
+@media (max-width: 520px) {
+  .landing .text {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .landing .text p:nth-child(2),
+  .landing .text p > span {
+    font-size: 38px;
+  }
+
+  .landing a.btn {
+    font-size: 38px;
+    width: 420px;
+    height: 80px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .landing .text {
+    font-size: 18px;
+    line-height: 33px;
+  }
+  .landing .text p:nth-child(2),
+  .landing .text p > span {
+    font-size: 36px;
+  }
+
+  .landing a.btn {
+    font-size: 32px;
+    width: 380px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 430px) {
+  .landing .text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .landing .text p:nth-child(2),
+  .landing .text p > span {
+    font-size: 28px;
+  }
+
+  .landing a.btn {
+    font-size: 26px;
+    width: 300px;
+    height: 50px;
+    padding-top: 6px;
+  }
+}
+
+@media (max-width: 340px) {
+  .landing .text {
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .landing .text p:nth-child(2),
+  .landing .text p > span {
+    font-size: 26px;
+  }
+
+  .landing a.btn {
+    font-size: 24px;
+    width: 280px;
+    height: 45px;
+    padding-top: 6px;
+  }
+}
